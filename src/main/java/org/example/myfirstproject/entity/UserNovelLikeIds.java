@@ -11,7 +11,7 @@ import java.io.Serializable;
 @Setter
 @Embeddable
 @EqualsAndHashCode
-public class novelTagIds implements Serializable {
+public class UserNovelLikeIds implements Serializable {
+    private Long userId;
     private Long novelId;
-    private Long adminId;
 }

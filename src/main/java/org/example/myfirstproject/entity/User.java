@@ -24,6 +24,7 @@ public class User extends UpdatedAt{
     @Column(length = 20) private String nickName;
     @Column(length = 30, nullable = false) private String email;
     @Column(length = 200, nullable = false) private String pw;
+    @Column(length = 200, nullable = false) private String pic;
     @ColumnDefault("0") private Integer coin;
     @Column private UserType userType;
     @Column(nullable = false) private LocalDate birthday;

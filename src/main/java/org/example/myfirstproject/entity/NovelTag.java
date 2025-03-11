@@ -7,10 +7,13 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class novelTag {
+public class NovelTag {
     @EmbeddedId
-    private novelTagIds novelTagIds;
+    private NovelTagIds novelTagIds;
 
     @ManyToOne @JoinColumn(name = "admin_id") @MapsId("admin_id")
     private Admin admin;
+    @ManyToOne @JoinColumn(name = "novel_id") @MapsId("novel_id")
+    private Novel novel;
+
 }
